@@ -10,7 +10,7 @@
 *Version:v01
 *Fecha: 13/02/2021
 **/
-namespace Assets.Inputs
+namespace Assets.Gamepad
 {
 
     public class GamepadInput : MonoBehaviour
