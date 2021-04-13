@@ -39,6 +39,12 @@ public class PlayerMovement : MonoBehaviour
     }
     private void FixedUpdate()
     {
+        
+
+    }
+
+    private void Move()
+    {
         if (Input.GetKey(KeyCode.A))
         {
 
@@ -60,17 +66,15 @@ public class PlayerMovement : MonoBehaviour
             //_rigidbody2D.AddForce(new Vector2(1, 0) * Time.deltaTime * _speedMove);
             _rigidbody2D.velocity = new Vector2(0, 1) * _speedMove * 2;
         }
-        if (Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKey(KeyCode.E))
         {
-            Debug.Log("X");
+            
             _animator.SetTrigger("Attack");
         }
-        if (Input.GetKeyDown(KeyCode.R))
+        if (Input.GetKey(KeyCode.R))
         {
-            Debug.Log("Y");
-
+            
             _animator.SetTrigger("Throw");
         }
-
     }
 }
